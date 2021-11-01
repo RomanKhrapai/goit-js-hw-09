@@ -14,6 +14,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  
 }
 
 img {
@@ -21,21 +22,33 @@ img {
   max-width: 100%;
 }
 
-input#datetime-picker{
+input{
   font-size: 27px;
   width: 275px;
   font-weight: 500;
 }
 
-  button[data-start]{
+  button{
     font-size: 27px;
     padding: 0 10px;
     height: 37px;
     font-weight: 500;
   }
-  .timer{
+  .timer, .form{
     display: flex;
     padding-top: 20px;
+  }
+  .form input{
+    width: 150px;
+  }
+  .form button {
+    margin-top: 30PX;
+    font-size: 20px;
+
+  }
+  .form label{
+    display: flex;
+    flex-flow: column;
   }
   .field{
     display: flex;
@@ -45,9 +58,9 @@ input#datetime-picker{
     text-transform: uppercase;
     text-align: center;
   }
-.field:not(:last-child){
+.field:not(:last-child),.form label{
     margin-right: 20px;
   }
-  .label{
+  .label, label{
     font-size: 20px;
   }
